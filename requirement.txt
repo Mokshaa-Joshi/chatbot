@@ -1,0 +1,8 @@
+streamlit
+pymongo
+pinecone-client
+transformers
+torch
+pdfplumber
+scikit-learn
+numpy
