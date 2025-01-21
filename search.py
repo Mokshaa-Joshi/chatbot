@@ -2,6 +2,8 @@ import numpy as np
 from sklearn.metrics.pairwise import cosine_similarity
 from pymongo import MongoClient
 
+db_uri = st.secrets["MONGO_URI"]
+
 def store_vectors_in_mongo(chunks, vectors, db_uri):
     client = MongoClient(db_uri)
     db = client['document_database']
