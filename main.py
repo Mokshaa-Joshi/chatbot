@@ -1,8 +1,8 @@
 import streamlit as st
-from app.data_processing import extract_text_from_pdf
-from app.vectorization import vectorize_text
-from app.search import store_vectors_in_mongo, search_similar_chunks
-from app.response_generator import generate_response
+from data_processing import extract_text_from_pdf
+from vectorization import vectorize_text
+from search import store_vectors_in_mongo, search_similar_chunks
+from response_generator import generate_response
 from sklearn.feature_extraction.text import TfidfVectorizer
 from pinecone import Pinecone
 import numpy as np
