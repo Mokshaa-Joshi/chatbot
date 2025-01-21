@@ -1,6 +1,7 @@
 import numpy as np
 from sklearn.metrics.pairwise import cosine_similarity
 from pymongo import MongoClient
+import streamlit as st
 
 db_uri = st.secrets["MONGO_URI"]
 
